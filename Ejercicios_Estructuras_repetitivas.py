@@ -1,4 +1,4 @@
-'''#1. Mostrar los números ascendentes desde el 1 al 10
+#1. Mostrar los números ascendentes desde el 1 al 10
 
 
 for i in range(1,11):
@@ -97,7 +97,7 @@ print("")
 
 #11.Ingresar un número. Mostrar cada número primo que hay entre el 1 y el
 #número ingresado. Informar cuántos números primos se encontraron
-'''
+
 numero = int(input("Ingrese un número: "))
 flag = True
 contador = 0
