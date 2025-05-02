@@ -8,7 +8,7 @@ nombres = ["Ana","Luis","Juan","Sol","Roberto","Sonia","Ulises","Sofia","Maria",
 edades = [23,45,34,23,46,23,45,67,37,68,25,55,45,27,43]
 
 '''
-def ordenar_nombres_por_edad_descendente(edades: list, nombre: list):
+def ordenar_nombres_por_edad_ascendente(edades: list, nombre: list):
     for i in range(len(edades) - 1):
         for j in range(i+1, len(edades)):
             if edades[i] > edades[j]:
@@ -19,7 +19,7 @@ def ordenar_nombres_por_edad_descendente(edades: list, nombre: list):
                 edades[j] = edades[i]
                 edades[i] = contenedor_edad
 
-ordenar_nombres_por_edad_descendente(edades, nombres)
+ordenar_nombres_por_edad_ascendente(edades, nombres)
 for i in range(len(edades)):
     print(f"{edades[i]}: {nombres[i]}")
 '''
