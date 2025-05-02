@@ -1,4 +1,4 @@
-from listas_personas import *
+from 8listas_personas import *
 
 def listar_datos_de_mexico()->list:
     mexicanos = []
