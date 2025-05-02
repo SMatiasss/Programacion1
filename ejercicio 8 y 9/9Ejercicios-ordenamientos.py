@@ -1,4 +1,4 @@
-'''# Ejercicio 1: Dadas las siguientes listas:
+# Ejercicio 1: Dadas las siguientes listas:
 # Nombres = ["Ana","Luis","Juan","Sol","Roberto","Sonia","Ulises","Sofia","Maria","Pedro","Antonio", 
 # "Eugenia", "Soledad", "Mario", "Mariela"]
 # edades = [23,45,34,23,46,23,45,67,37,68,25,55,45,27,43]
@@ -7,7 +7,7 @@
 nombres = ["Ana","Luis","Juan","Sol","Roberto","Sonia","Ulises","Sofia","Maria","Pedro","Antonio", "Eugenia", "Soledad", "Mario", "Mariela"]
 edades = [23,45,34,23,46,23,45,67,37,68,25,55,45,27,43]
 
-
+'''
 def ordenar_nombres_por_edad_descendente(edades: list, nombre: list):
     for i in range(len(edades) - 1):
         for j in range(i+1, len(edades)):
@@ -22,8 +22,7 @@ def ordenar_nombres_por_edad_descendente(edades: list, nombre: list):
 ordenar_nombres_por_edad_descendente(edades, nombres)
 for i in range(len(edades)):
     print(f"{edades[i]}: {nombres[i]}")
-
-print(" \n")
+'''
 
 def ordenar_alfabeticamente(nombres: list, edades: list):
     for i in range(len(nombres) - 1):
@@ -36,15 +35,10 @@ def ordenar_alfabeticamente(nombres: list, edades: list):
                 edades[i] = edades[j]
                 edades[j] = contenedor_edad
 
-Nombres = ["Ana","Luis","Juan","Sol","Roberto","Sonia","Ulises","Sofia","Maria","Pedro","Antonio", "Eugenia", "Soledad", "Mario", "Mariela"]
-Edades = [23,45,34,23,46,23,45,67,37,68,25,55,45,27,43]
-
 ordenar_alfabeticamente(Nombres, Edades)
 
 for i in range(len(Nombres)):
     print(f"{Nombres[i]}: {Edades[i]}")
-
-print(" \n")
 
 # Ejercicio 2: Dadas las siguientes listas:
 # Nombres = ["Matematica","Investigacion Operativa","Ingles","Literatura","Ciencias Sociales","Computacion",
@@ -77,8 +71,6 @@ def ordenar_materias_ascendente(numero: list, materia: list):
 ordenar_materias_ascendente(puntos, nombres)
 for i in range(len(nombres)):
     print(f"{nombres[i]}: {puntos[i]}")
-print("\n")
-
 
 # Ejercicio 3: Dadas las siguientes listas:
 # Estudiantes = ["Ana","Luis","Juan","Sol","Roberto","Sonia","María","Sofia","Maria","Pedro",
@@ -125,11 +117,10 @@ def ordenar_calificaciones(nota: list, apellido: list, nombre: list):
 ordenar_calificaciones(nota, apellidos, estudiantes)
 for i in range(len(estudiantes)):
     print(f"{apellidos[i]} {estudiantes[i]}: {nota[i]}")
-print(" \n")
 
 # Ejercicio 4: Una startup desea analizar las estadísticas de los usuarios de su sitio de compras on-line 
 # recientemente lanzado al mercado para ello necesita un programa que le permita acceder a los datos relevados.
-# Agregar los siguientes puntos al Menú de Opciones:'''
+# Agregar los siguientes puntos al Menú de Opciones:
 # 9-Listar los datos de los usuarios de México ordenados por nombre
 # 10-Listar los datos del/los usuario/s más joven/es ordenados por edad de
 # manera ascendente (Si la edad se repite, ordenar por nombre de manera
