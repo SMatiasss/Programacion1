@@ -132,45 +132,4 @@ for i in range(len(estudiantes)):
 # Nota: No se podrá acceder a ninguna opción de menú si no se realizó la importación
 # de las listas
 
-from listas_personas import *
-from funciones_compras_online import cerrar_menu,listar_mexicanos_ascendente,listar_jovenes_ascendente,listar_ascendente_mexico_brasil_zip8000
-
-def comenzar_menu():
-    importado = False
-    opcion = None
-    print("-" * 100)
-    while opcion != 0:
-        print(" \nBienvenido a la tienda on-line\n " + "\n" + "-" * 100 + "\n \n1-Importar listas\n9-Listar los datos de los usuarios de México ordenados por nombre.\n10-Listar los datos del/los usuario/s más joven/es ordenados por edad de manera ascendente.\n11-Listar los datos de los usuarios de México y Brasil cuyo código postal sea mayor a 8000 ordenado por nombre y edad de manera descendente\n0-Finalizar programa.\n" + "-" * 100)
-        opcion = int(input(" \nElija una opción: "))
-        if opcion == 1:
-            print('\n"Listas_personas.py" importado con éxito. \n' + '.' * 100)
-            importado = True
-            opcion = None
-        elif opcion == 0:
-            opcion = cerrar_menu()
-        elif importado == False:
-            print("\nDebe importar la lista primero.\n" + "-" * 100)
-        else:
-            match opcion:
-                case 9:
-                    for usuario in listar_mexicanos_ascendente():
-                        print(f"\n {usuario}\n" + "." * 100)
-                    print("-" * 100)
-                    opcion = None
-                case 10:
-                    for usuario in listar_jovenes_ascendente():
-                        print(f"\n {usuario}\n" + "." * 100)
-                    print("-" * 100)
-                    opcion = None
-                case 11:
-                    for usuario in listar_ascendente_mexico_brasil_zip8000():
-                        print(f"\n {usuario}\n" + "." * 100)
-                    print("-" * 100)
-                    opcion = None
-                case 0:
-                    opcion = cerrar_menu()
-                case _:
-                    print("Opción inválida, intente denuevo.")
-                    print("-" * 100)
-                
-comenzar_menu()
+#Decidí hacer el programa de compras on-line en un archivo separado, se encuentra en la carpeta "programa Compras On-line"
