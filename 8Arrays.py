@@ -1,4 +1,4 @@
-'''# Ejercicio 1: Desarrollar una función que pida 10 nombres de manera secuencial, los guarde en una lista y la retorne. El programa principal debe invocar a la función y mostrar por pantalla el retorno.
+# Ejercicio 1: Desarrollar una función que pida 10 nombres de manera secuencial, los guarde en una lista y la retorne. El programa principal debe invocar a la función y mostrar por pantalla el retorno.
 
 def guardar_10nombres()->list:
     lista_nombres = []
@@ -91,7 +91,7 @@ from listas_personas import nombres as nombres_local
 def mostrar_listas():
     for nombre in nombres_local:
         print(nombre)
-'''
+
 # Ejercicio 7: Una startup desea analizar las estadísticas de los usuarios de su sitio de compras on-line 
 # recientemente lanzado al mercado para ello necesita un programa que le permita acceder a los datos relevados.
 # Realizar una función con el siguiente Menú de Opciones:
