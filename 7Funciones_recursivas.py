@@ -9,7 +9,7 @@ def suma_naturales(numero: int)->int:
 
 numero = int(input("numero: "))
 print(suma_naturales(numero))
-'''
+
 #2. Realizar una función recursiva que calcule la potencia de un número:
 
 def calcular_potencia(base: int, exponente: int)->int:
@@ -35,4 +35,4 @@ def calcular_fibonacci(num: int)->int:
     else:
         return calcular_fibonacci(num - 1) + calcular_fibonacci(num - 2)
 
-print(calcular_fibonacci(8))'''
+print(calcular_fibonacci(8))
