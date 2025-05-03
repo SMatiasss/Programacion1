@@ -18,8 +18,8 @@ def calcular_potencia(base: int, exponente: int)->int:
     else:
         return base * calcular_potencia(base, exponente - 1)
 
-#3. Realizar una función recursiva que permita realizar la suma de los dígitos de un número:
-123 // 10 = 23 <- //10 = 1 2
+#3. Realizar una función recursiva que permita realizar la suma de los dígitos de un número: 
+#123 // 10 = 23 <- //10 = 1 2
 
 def sumar_digitos(num: int)->int:
     if num == 0:
