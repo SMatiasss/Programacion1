@@ -1,6 +1,6 @@
 def verificar_tesoro(mapa: list, x: int, y: int) -> int:
     encontrado = 1
-    if mapa[x][y] == 1:
+    if mapa[y][x == 1:
         encontrado = 0
     return encontrado
 
