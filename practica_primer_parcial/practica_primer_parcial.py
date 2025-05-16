@@ -25,7 +25,7 @@ while continuar:
     else:
         x_tesoro = 4
         y_tesoro = 2
-        distancia = (int(x_usuario) - x_tesoro) + (int(y_usuario) - y_tesoro)
+        distancia = abs(int(x_usuario) - x_tesoro) + abs(int(y_usuario) - y_tesoro)
         if distancia < 0:
             distancia *= -1
         x_usuario = None
