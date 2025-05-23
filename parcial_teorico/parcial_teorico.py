@@ -12,5 +12,5 @@ def calcular_promedio(lista: list, valor: int)-> bool:
 
 entrada = [10, 20, 30, 40]
 valor = 24
-print(calcular_promedio(entrada, valor)) # Parametros reales "entrada" ([10, 20, 30, 40]) y "valor" (26)
-      #^ Invoca a la función. 
+print(calcular_promedio(entrada, valor)) # Parametros reales "entrada" ([10, 20, 30, 40]) y "valor" (26).
+      #^ Invoca a la función dentro de print, para conocer su retorno.
