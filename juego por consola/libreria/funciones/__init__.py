@@ -1,0 +1,1 @@
+from .funciones_internas import *
