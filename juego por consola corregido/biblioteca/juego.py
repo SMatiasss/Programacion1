@@ -18,3 +18,12 @@ def establecer_fin_del_juego(posicion: int, preguntas: list)-> int:
     if len(preguntas) == 0:
         fin = 3
     return fin
+
+def fin_del_juego(opcion:int, espera: str, nombre: str, posicion: int):
+    if opcion == 1:
+        input("\n¡Usted ha ganado!" + espera)
+    elif opcion ==2:
+        input("\n¡Usted ha perdido!" + espera)
+    else:
+        input(f"\n¡Se han acabado las preguntas!\n\n{nombre}, su puntuacion es: {posicion}" + espera)
+    return False
