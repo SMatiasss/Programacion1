@@ -22,7 +22,7 @@ if posicion_del_jugador > 0 and posicion_del_jugador < 30:
             else:
                 input(f"\n¡Se han acabado las preguntas!\n\n{nombre}, su puntuacion es: {posicion_del_jugador - 1}" + espera)
                 jugar = False
-    guardar(nombre, posicion_del_jugador)
-    print("\nFinalizando...")
+        guardar(nombre, posicion_del_jugador)
+        print("\nFinalizando...")
 else:
     print("La posicion inicial debe ser mayor a 0 y menor a 30")
