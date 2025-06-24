@@ -13,15 +13,8 @@ if posicion_del_jugador > 0 and posicion_del_jugador < 30:
                 if fin == 0:
                     print(f"Usted se ha movido a la posicion {posicion_del_jugador}")
                     jugar = s_n(input(desea_continuar), desea_continuar)
-            elif fin == 1:
-                input("\n¡Usted ha ganado!" + espera)
-                jugar = False
-            elif fin == 2:
-                input("\n¡Usted ha perdido!" + espera)
-                jugar = False
             else:
-                input(f"\n¡Se han acabado las preguntas!\n\n{nombre}, su puntuacion es: {posicion_del_jugador}" + espera)
-                jugar = False
+                jugar = fin_del_juego(fin, espera, nombre, posicion_del_jugador)
         guardar(nombre, posicion_del_jugador)
         print("\nFinalizando...")
 else:
