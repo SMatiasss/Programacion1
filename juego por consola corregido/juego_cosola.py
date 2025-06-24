@@ -20,7 +20,7 @@ if posicion_del_jugador > 0 and posicion_del_jugador < 30:
                 input("\n¡Usted ha perdido!" + espera)
                 jugar = False
             else:
-                input(f"\n¡Se han acabado las preguntas!\n\n{nombre}, su puntuacion es: {posicion_del_jugador - 1}" + espera)
+                input(f"\n¡Se han acabado las preguntas!\n\n{nombre}, su puntuacion es: {posicion_del_jugador}" + espera)
                 jugar = False
         guardar(nombre, posicion_del_jugador)
         print("\nFinalizando...")
