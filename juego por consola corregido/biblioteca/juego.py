@@ -16,7 +16,6 @@ def establecer_fin_del_juego(posicion: int, preguntas: list, espera: str, nombre
     ''' Determina si el jugador gana, pierde o se acaban las preguntas y retorna True 
         en caso contrario.
     '''
-    
     jugar = True
     if posicion == 30:
         input("\n¡Usted ha ganado!" + espera)
